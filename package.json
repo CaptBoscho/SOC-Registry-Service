@@ -1,0 +1,23 @@
+{
+  "name": "soc-registry-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekargueta/SOC-Registry-Service.git"
+  },
+  "author": "Derek Argueta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekargueta/SOC-Registry-Service/issues"
+  },
+  "homepage": "https://github.com/derekargueta/SOC-Registry-Service#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
