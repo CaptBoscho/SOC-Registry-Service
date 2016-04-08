@@ -1,13 +1,11 @@
 const express = require('express');
+const path = require('path');     //used for file path
 const app = module.exports = express();
 
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
-
-app.use('/', (req, res) => {
-    res.send('Hello world');
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 const listen = process.env.NODE_IP || '0.0.0.0';
