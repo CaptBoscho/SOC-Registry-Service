@@ -23,6 +23,11 @@ app.get('/jars', function(req, res) {
 	res.status(200).send(JSON.stringify(uploaded_jars));
 })
 
+app.get('/clear', function(req, res) {
+	uploaded_jars = [];
+	res.status(200).send(JSON.stringify(uploaded_jars));
+});
+
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 const listen = process.env.NODE_IP || '0.0.0.0';
 app.listen(port, listen, (err) => {
